@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="css/main.css">
+	<title>Floarart-header</title>
+	<link rel="stylesheet" href="sass/_grid.sass">
+</head>
+<body>
+<header class="header">
+	<div class="header__top">
+		<div class="header__top-wrapper container">
+			<nav class="header__nav-top">
+				<ul class="points">
+					<li class="points__items"><a
+							class="header__nav-link points__link points__link--header-top points__link--active link-style-small"
+							href="#">Главная</a></li>
+					<li class="points__items"><a class="header__nav-link points__link points__link--header-top link-style-small"
+					                             href="#">О нас</a></li>
+					<li class="points__items"><a class="header__nav-link points__link points__link--header-top link-style-small"
+					                             href="#">Отзывы</a></li>
+					<li class="points__items"><a class="header__nav-link points__link points__link--header-top link-style-small"
+					                             href="#">Статьи</a></li>
+					<li class="points__items"><a class="header__nav-link points__link points__link--header-top link-style-small"
+					                             href="#">Доставка/Самовывоз</a></li>
+					<li class="points__items"><a class="header__nav-link points__link points__link--header-top link-style-small"
+					                             href="#">Контакты</a></li>
+				</ul>
+				
+				<div class="header__shop">
+					<button class="header__shop-button link-style-medium">Адреса магазинов в
+						<span class="header__decoration"> г. Нижний Новгород</span>
+						<span class="header__location-show">
+						  <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 1L5 5L9 1" stroke="#333333" stroke-opacity="0.8" stroke-width="1.33333"
+								      stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+					  </span></button>
+					<div class="header__shop-hidden">
+						<ul class="header__hidden-list">
+							<li class="header__hidden-items"><a class="header__hidden-link" href="#"></a></li>
+							<li class="header__hidden-items"><a class="header__hidden-link" href="#"></a></li>
+							<li class="header__hidden-items"><a class="header__hidden-link" href="#"></a></li>
+							<li class="header__hidden-items"><a class="header__hidden-link" href="#"></a></li>
+							<li class="header__hidden-items"><a class="header__hidden-link" href="#"></a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+	
+	<div class="header__scroll">
+		<div class="header__average">
+			<div class="header__average-wrapper container">
+				<div class="header__logo-wrapper">
+					<a class="header__logo-item" href="#">
+						<img class="header__logo" src="img/header/logo-flor.png" alt="Логотип"></a>
+					<p class="header__logo-dis link-style-small">Цветы по самым выгодным ценам в Нижнем Новгороде</p>
+				</div>
+				
+				
+				<div class="header__call">
+					<div class="header__social">
+						<ul class="points">
+							<li class="points__items points__items--social"><a class="points__link" href="#">
+								<svg class="points__link-svg">
+									<use xlink:href="img/set.svg#instagramm"></use>
+								</svg>
+							</a></li>
+							<li class="points__items points__items--social"><a class="points__link" href="#">
+								<svg class="points__link-svg">
+									<use xlink:href="img/set.svg#vk"></use>
+								</svg>
+							</a></li>
+							<li class="points__items points__items--social"><a class="points__link" href="#">
+								<svg class="points__link-svg">
+									<use xlink:href="img/set.svg#email"></use>
+								</svg>
+							</a></li>
+							<li class="points__items points__items--social"><a class="points__link" href="#">
+								<svg class="points__link-svg">
+									<use xlink:href="img/set.svg#viber"></use>
+								</svg>
+							</a></li>
+							<li class="points__items points__items--social"><a class="points__link" href="#">
+								<svg class="points__link-svg">
+									<use xlink:href="img/set.svg#whatsapp"></use>
+								</svg>
+							</a></li>
+							<li class="points__items points__items--social"><a class="points__link" href="#">
+								<svg class="points__link-svg">
+									<use xlink:href="img/set.svg#telegramm"></use>
+								</svg>
+							</a></li>
+						</ul>
+					</div>
+					
+					<div class="header__callback-item">
+						<a class="header__number link-style-medium" href="tel:+78312833688">
+							<span class="header__number-icon"><svg width="21" height="17" viewBox="0 0 23 23" fill="none"
+							                                       xmlns="http://www.w3.org/2000/svg"><path
+									d="M21.9993 16.7225V19.8839C22.0005 20.1774 21.9403 20.4679 21.8225 20.7368C21.7047 21.0057 21.5319 21.247 21.3152 21.4454C21.0985 21.6438 20.8427 21.7949 20.5642 21.8889C20.2856 21.9829 19.9904 22.0179 19.6975 21.9914C16.4484 21.6391 13.3275 20.5311 10.5853 18.7563C8.03418 17.1384 5.87123 14.9798 4.2501 12.4336C2.46565 9.68454 1.35515 6.55458 1.00857 3.29735C0.982184 3.00594 1.01689 2.71225 1.11046 2.43496C1.20404 2.15767 1.35444 1.90287 1.5521 1.68677C1.74975 1.47067 1.99033 1.29802 2.2585 1.1798C2.52668 1.06157 2.81659 1.00038 3.10976 1.0001H6.27738C6.78981 0.995069 7.28658 1.17617 7.67511 1.50964C8.06364 1.84311 8.31741 2.30621 8.38913 2.81261C8.52283 3.82431 8.77078 4.81767 9.12824 5.77374C9.2703 6.15091 9.30105 6.56082 9.21684 6.9549C9.13263 7.34898 8.93699 7.7107 8.6531 7.99722L7.31214 9.33552C8.81524 11.9737 11.004 14.1581 13.6474 15.6582L14.9883 14.3199C15.2754 14.0366 15.6379 13.8413 16.0327 13.7573C16.4276 13.6732 16.8383 13.7039 17.2162 13.8457C18.1742 14.2025 19.1695 14.4499 20.1832 14.5834C20.6962 14.6556 21.1646 14.9134 21.4994 15.3078C21.8343 15.7022 22.0122 16.2057 21.9993 16.7225Z"
+									stroke="#65B03F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+							+7 (831) 283-36-88</a>
+						<button class="header__callback link-style-small js-callback-open">заказать обратный звонок</button>
+					</div>
+				</div>
+			
+			</div>
+		</div>
+		
+		<div class="header__bottom">
+			<div class="container">
+				<div class="header__down-menu">
+					
+					<ul class="header__points header__points--hide points points--catalog">
+						<li class="points__items points__items--catalog"><a
+								class="header__points-link points__link points__link--catalog link-style-small" href="#">Каталог</a>
+						</li>
+						<li class="points__items points__items--catalog"><a
+								class="header__points-link points__link points__link--catalog link-style-small" href="#">Розы</a></li>
+						<li class="points__items points__items--catalog"><a
+								class="header__points-link points__link points__link--catalog link-style-small" href="#">Цветы в
+							коробке</a></li>
+						<li class="points__items points__items--catalog"><a
+								class="header__points-link points__link points__link--catalog link-style-small" href="#">Шары</a></li>
+						<li class="points__items points__items--catalog"><a
+								class="header__points-link points__link points__link--catalog link-style-small" href="#">Подарки</a>
+						</li>
+						<li class="points__items points__items--catalog"><a class="header__points-link points__link points__link--catalog link-style-small" href="#">Акции</a></li>
+					
+					</ul>
+					
+					<div class="header__burger-box">
+						<div class="menu-burger js-open-burger">
+							<span class="menu-burger__body"></span>
+						</div>
+						
+						<a class="header__bonus-link header__bonus-link--mobile header__bonus-link--indent points__link points__link--catalog link-style-medium link-style-medium--color" href="#">%Бонусы</a>
+					</div>
+					
+					<div class="header__mobile-menu">
+						<div class="header__logo-wrapper header__logo-wrapper--mobile">
+							<a class="header__logo-item header__logo-item--mobile" href="#">
+								<img class="header__logo" src="img/header/logo-flor.png" alt="Логотип"></a>
+							<div class="header__callback-item">
+								<a class="header__number link-style-medium" href="tel:+78312833688">
+							<span class="header__number-icon"><svg width="21" height="17" viewBox="0 0 23 23" fill="none"
+							                                       xmlns="http://www.w3.org/2000/svg"><path
+									d="M21.9993 16.7225V19.8839C22.0005 20.1774 21.9403 20.4679 21.8225 20.7368C21.7047 21.0057 21.5319 21.247 21.3152 21.4454C21.0985 21.6438 20.8427 21.7949 20.5642 21.8889C20.2856 21.9829 19.9904 22.0179 19.6975 21.9914C16.4484 21.6391 13.3275 20.5311 10.5853 18.7563C8.03418 17.1384 5.87123 14.9798 4.2501 12.4336C2.46565 9.68454 1.35515 6.55458 1.00857 3.29735C0.982184 3.00594 1.01689 2.71225 1.11046 2.43496C1.20404 2.15767 1.35444 1.90287 1.5521 1.68677C1.74975 1.47067 1.99033 1.29802 2.2585 1.1798C2.52668 1.06157 2.81659 1.00038 3.10976 1.0001H6.27738C6.78981 0.995069 7.28658 1.17617 7.67511 1.50964C8.06364 1.84311 8.31741 2.30621 8.38913 2.81261C8.52283 3.82431 8.77078 4.81767 9.12824 5.77374C9.2703 6.15091 9.30105 6.56082 9.21684 6.9549C9.13263 7.34898 8.93699 7.7107 8.6531 7.99722L7.31214 9.33552C8.81524 11.9737 11.004 14.1581 13.6474 15.6582L14.9883 14.3199C15.2754 14.0366 15.6379 13.8413 16.0327 13.7573C16.4276 13.6732 16.8383 13.7039 17.2162 13.8457C18.1742 14.2025 19.1695 14.4499 20.1832 14.5834C20.6962 14.6556 21.1646 14.9134 21.4994 15.3078C21.8343 15.7022 22.0122 16.2057 21.9993 16.7225Z"
+									stroke="#65B03F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+									+7 (831) 283-36-88</a>
+								<button class="header__callback link-style-small js-callback-open">заказать обратный звонок</button>
+							</div>
+						</div>
+						<ul class="header__points header__points--show points points--catalog">
+							<li class="points__items points__items--catalog">
+								<a class="header__points-link points__link points__link--catalog link-style-small mobile" href="#">Каталог</a>
+							</li>
+							<li class="points__items points__items--catalog">
+								<a class="header__points-link points__link points__link--catalog link-style-small mobile" href="#">Розы</a></li>
+							<li class="points__items points__items--catalog">
+								<a class="header__points-link points__link points__link--catalog link-style-small mobile" href="#">Цветы в коробке</a></li>
+							<li class="points__items points__items--catalog">
+								<a class="header__points-link points__link points__link--catalog link-style-small mobile" href="#">Шары</a></li>
+							<li class="points__items points__items--catalog">
+								<a class="header__points-link points__link points__link--catalog link-style-small mobile" href="#">Подарки</a>
+							</li>
+							<li class="points__items points__items--catalog">
+								<a class="header__points-link points__link points__link--catalog link-style-small mobile" href="#">Акции</a></li>
+							<li class="points__items points__items--catalog">
+								<svg class="points__items-close js-close-menu">
+									<use xlink:href="img/set.svg#close"></use>
+								</svg>
+							</li>
+						</ul>
+					
+						<nav class="header__nav-top header__nav-top--mobile">
+							<ul class="points points--mobile">
+								<li class="points__items"><a
+										class="header__nav-link points__link points__link--header-top points__link--active link-style-small"
+										href="#">Главная</a></li>
+								<li class="points__items"><a class="header__nav-link points__link points__link--header-top link-style-small"
+								                             href="#">О нас</a></li>
+								<li class="points__items"><a class="header__nav-link points__link points__link--header-top link-style-small"
+								                             href="#">Отзывы</a></li>
+								<li class="points__items"><a class="header__nav-link points__link points__link--header-top link-style-small"
+								                             href="#">Статьи</a></li>
+								<li class="points__items"><a class="header__nav-link points__link points__link--header-top link-style-small"
+								                             href="#">Доставка/Самовывоз</a></li>
+								<li class="points__items"><a class="header__nav-link points__link points__link--header-top link-style-small"
+								                             href="#">Контакты</a></li>
+							</ul>
+							
+							<div class="header__shop">
+								<button class="header__shop-button header__shop-button--mobile link-style-medium">Адреса магазинов в
+									<span class="header__decoration"> г. Нижний Новгород</span>
+									<span class="header__location-show">
+						  <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 1L5 5L9 1" stroke="#333333" stroke-opacity="0.8" stroke-width="1.33333"
+								      stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+					  </span></button>
+								<div class="header__shop-hidden">
+									<ul class="header__hidden-list">
+										<li class="header__hidden-items"><a class="header__hidden-link" href="#"></a></li>
+										<li class="header__hidden-items"><a class="header__hidden-link" href="#"></a></li>
+										<li class="header__hidden-items"><a class="header__hidden-link" href="#"></a></li>
+										<li class="header__hidden-items"><a class="header__hidden-link" href="#"></a></li>
+										<li class="header__hidden-items"><a class="header__hidden-link" href="#"></a></li>
+									</ul>
+								</div>
+							</div>
+						</nav>
+						<div class="header__social header__social--mobile">
+							<ul class="points">
+								<li class="points__items points__items--social"><a class="points__link" href="#">
+									<svg class="points__link-svg">
+										<use xlink:href="img/set.svg#instagramm"></use>
+									</svg>
+								</a></li>
+								<li class="points__items points__items--social"><a class="points__link" href="#">
+									<svg class="points__link-svg">
+										<use xlink:href="img/set.svg#vk"></use>
+									</svg>
+								</a></li>
+								<li class="points__items points__items--social"><a class="points__link" href="#">
+									<svg class="points__link-svg">
+										<use xlink:href="img/set.svg#email"></use>
+									</svg>
+								</a></li>
+								<li class="points__items points__items--social"><a class="points__link" href="#">
+									<svg class="points__link-svg">
+										<use xlink:href="img/set.svg#viber"></use>
+									</svg>
+								</a></li>
+								<li class="points__items points__items--social"><a class="points__link" href="#">
+									<svg class="points__link-svg">
+										<use xlink:href="img/set.svg#whatsapp"></use>
+									</svg>
+								</a></li>
+								<li class="points__items points__items--social"><a class="points__link" href="#">
+									<svg class="points__link-svg">
+										<use xlink:href="img/set.svg#telegramm"></use>
+									</svg>
+								</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<ul class="header__bonus-item points points--catalog">
+						<li class="points__items points__items--catalog">
+							<a class="header__bonus-link header__bonus-link--discount points__link points__link--catalog link-style-small" href="#">
+								<svg class="header__bonus-mobile" width="24" height="24" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16.3 9.5V18H2.69995V9.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M18 5.25H1V9.5H18V5.25Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M9.5 18V5.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M9.50005 5.25H5.67505C5.11146 5.25 4.57096 5.02612 4.17245 4.6276C3.77393 4.22909 3.55005 3.68859 3.55005 3.125C3.55005 2.56141 3.77393 2.02091 4.17245 1.6224C4.57096 1.22388 5.11146 1 5.67505 1C8.65005 1 9.50005 5.25 9.50005 5.25Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M9.5 5.25H13.325C13.8886 5.25 14.4291 5.02612 14.8276 4.6276C15.2261 4.22909 15.45 3.68859 15.45 3.125C15.45 2.56141 15.2261 2.02091 14.8276 1.6224C14.4291 1.22388 13.8886 1 13.325 1C10.35 1 9.5 5.25 9.5 5.25Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</a></li>
+						<li class="points__items points__items--catalog">
+							<a class="header__bonus-link points__link points__link--catalog link-style-small" href="#">
+								<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+											d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815V2.76815Z"
+											stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</a></li>
+						<li class="points__items points__items--catalog">
+							<a class="header__bonus-link points__link points__link--catalog link-style-small" href="#">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+											d="M9 23C9.55228 23 10 22.5523 10 22C10 21.4477 9.55228 21 9 21C8.44772 21 8 21.4477 8 22C8 22.5523 8.44772 23 9 23Z"
+											stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path
+											d="M20 23C20.5523 23 21 22.5523 21 22C21 21.4477 20.5523 21 20 21C19.4477 21 19 21.4477 19 22C19 22.5523 19.4477 23 20 23Z"
+											stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path
+											d="M1 1H5L7.68 15.2823C7.77144 15.7734 8.02191 16.2145 8.38755 16.5285C8.75318 16.8424 9.2107 17.0092 9.68 16.9996H19.4C19.8693 17.0092 20.3268 16.8424 20.6925 16.5285C21.0581 16.2145 21.3086 15.7734 21.4 15.2823L23 6.3332H6"
+											stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</a></li>
+						<li class="points__items points__items--catalog">
+							<a class="header__bonus-link header__bonus-link--indent points__link points__link--catalog link-style-medium link-style-medium--color"
+							   href="#">%Бонусы</a></li>
+					</ul>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+
+</header>
+
+<section class="hero">
+	<div class="hero__wrapper">
+		
+		<div class="container">
+			<div class="hero__price">
+			<ul class="points points--price">
+				<li class="points__items"><a class="points__link link-style-medium" href="#">До 2000</a></li>
+				<li class="points__items"><a class="points__link link-style-medium" href="#">До 3000</a></li>
+				<li class="points__items"><a class="points__link link-style-medium" href="#">От 3000 до 5000</a></li>
+				<li class="points__items"><a class="points__link link-style-medium" href="#">От 5000 до 10000</a></li>
+				<li class="points__items"><a class="points__link link-style-medium" href="#">От 5000 до 10000</a></li>
+			</ul>
+		</div></div>
+		
+		<div class="container hero__slider-container">
+			<div class="hero__slider">
+				<div class="slider-hero JsSlider-hero swiper">
+					<div class="slider-hero__wrapper swiper-wrapper">
+						<div class="slider-hero__slide swiper-slide">
+							<div class="slider-hero__slide-wrapper">
+								<a class="hero__slider-link" href="#"><img src="img/hero/florartdemo-slider.jpg" alt="Банер"></a>
+							</div>
+						</div>
+						<div class="slider-hero__slide swiper-slide">
+							<div class="slider-hero__slide-wrapper">
+								<a class="hero__slider-link" href="#"><img src="img/hero/florartdemo-slider.jpg" alt="Банер"></a>
+							</div>
+						</div>
+						<div class="slider-hero__slide swiper-slide">
+							<div class="slider-hero__slide-wrapper">
+								<a class="hero__slider-link" href="#"><img src="img/hero/florartdemo-slider.jpg" alt="Банер"></a>
+							</div>
+						</div>
+						<div class="slider-hero__slide swiper-slide">
+							<div class="slider-hero__slide-wrapper">
+								<a class="hero__slider-link" href="#"><img src="img/hero/florartdemo-slider.jpg" alt="Банер"></a>
+							</div>
+						</div>
+						<div class="slider-hero__slide swiper-slide">
+							<div class="slider-hero__slide-wrapper">
+								<a class="hero__slider-link" href="#"><img src="img/hero/florartdemo-slider.jpg" alt="Банер"></a>
+							</div>
+						</div>
+						<div class="slider-hero__slide swiper-slide">
+							<div class="slider-hero__slide-wrapper">
+								<a class="hero__slider-link" href="#"><img src="img/hero/florartdemo-slider.jpg" alt="Банер"></a>
+							</div>
+						</div>
+						<div class="slider-hero__slide swiper-slide">
+							<div class="slider-hero__slide-wrapper">
+								<a class="hero__slider-link" href="#"><img src="img/hero/florartdemo-slider.jpg" alt="Банер"></a>
+							</div>
+						</div>
+						<div class="slider-hero__slide swiper-slide">
+							<div class="slider-hero__slide-wrapper">
+								<a class="hero__slider-link" href="#"><img src="img/hero/florartdemo-slider.jpg" alt="Банер"></a>
+							</div>
+						</div>
+						<div class="slider-hero__slide swiper-slide">
+							<div class="slider-hero__slide-wrapper">
+								<a class="hero__slider-link" href="#"><img src="img/hero/florartdemo-slider.jpg" alt="Банер"></a>
+							</div>
+						</div>
+					</div>
+					<div class="slider-hero__pagination js-heroPagination"></div>
+				
+				</div>
+				<div class="slider-hero__next jsHero-next">
+					<div class="slider-hero__control-wrap slider-hero__control-wrap--next">
+						<svg class="slider-hero__arrow slider-hero__arrow--next" width="59" height="59" viewBox="0 0 59 59"
+						     fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g filter="url(#filter0_d_420_22)">
+								<circle cx="29.5" cy="26.5" r="22.5" transform="rotate(-180 29.5 26.5)" fill="#F9F9F9"/>
+								<path d="M31 20L24 26L31 33" fill="#F9F9F9"/>
+								<path d="M31 20L24 26L31 33" stroke="#333333" stroke-width="2" stroke-linecap="round"
+								      stroke-linejoin="round"/>
+							</g>
+							<defs>
+								<filter id="filter0_d_420_22" x="0.333333" y="-4.52995e-06" width="58.3333" height="58.3333"
+								        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+									<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+									<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+									               result="hardAlpha"/>
+									<feOffset dy="2.66667"/>
+									<feGaussianBlur stdDeviation="3.33333"/>
+									<feComposite in2="hardAlpha" operator="out"/>
+									<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+									<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_420_22"/>
+									<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_420_22" result="shape"/>
+								</filter>
+							</defs>
+						</svg>
+					</div>
+				
+				</div>
+				<div class="slider-hero__prev jsHero-prev">
+					<div class="slider-hero__control-wrap slider-hero__control-wrap--prev">
+						<svg class="slider-hero__arrow" width="59" height="59" viewBox="0 0 59 59" fill="none"
+						     xmlns="http://www.w3.org/2000/svg">
+							<g filter="url(#filter0_d_420_22)">
+								<circle cx="29.5" cy="26.5" r="22.5" transform="rotate(-180 29.5 26.5)" fill="#F9F9F9"/>
+								<path d="M31 20L24 26L31 33" fill="#F9F9F9"/>
+								<path d="M31 20L24 26L31 33" stroke="#333333" stroke-width="2" stroke-linecap="round"
+								      stroke-linejoin="round"/>
+							</g>
+							<defs>
+								<filter id="filter0_d_420_22" x="0.333333" y="-4.52995e-06" width="58.3333" height="58.3333"
+								        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+									<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+									<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+									               result="hardAlpha"/>
+									<feOffset dy="2.66667"/>
+									<feGaussianBlur stdDeviation="3.33333"/>
+									<feComposite in2="hardAlpha" operator="out"/>
+									<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+									<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_420_22"/>
+									<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_420_22" result="shape"/>
+								</filter>
+							</defs>
+						</svg>
+					</div>
+				</div>
+			
+			</div>
+		</div>
+		
+	<div class="container">
+		<div class="hero__pick pick">
+			<a class="pick__link link-style-medium" href="#">подобрать идеальный букет</a>
+			<div class="pick__tender">
+				<ul class="points">
+					<li class="points__items"><a class="points__link points__link--pick-active link-style-medium" href="#">Акции</a></li>
+					<li class="points__items"><a class="points__link link-style-medium" href="#">Новинки</a></li>
+					<li class="points__items"><a class="points__link link-style-medium" href="#">Спецпредложения</a></li>
+					<li class="points__items"><a class="points__link link-style-medium" href="#">Хиты продаж</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="hero__element element">
+			<div class="element__block">
+				<p class="element__text element__text--price hero-element-text">Оптовые <br>цены</p>
+			</div>
+			<div class="element__block">
+				<p class="element__text element__text--delivery hero-element-text">Доставка <br>24 часа</p>
+			</div>
+			<div class="element__block">
+				<p class="element__text element__text--guarantees hero-element-text">Гарантия <br>качества</p>
+			</div>
+		</div>
+	</div>
+	</div>
+
+
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

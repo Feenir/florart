@@ -1,0 +1,111 @@
+//============================
+//          Цвет сайта
+//============================
+$main-color: #ffffff
+$header-color: #E6557B
+$pick-button-color-back: #E6557B
+$link-color: #65B03F
+$header-address-color: #65B03F
+$button-back-color: #65B03F
+$text-color: #333333
+$bullet-color: #333333
+$header-top-color: #F4F4F4
+$hero-element-color: #F4F4F4
+$text-lightly-color: rgba(51, 51, 51, 0.8)
+$text-light-color: rgba(51, 51, 51, 0.5)
+
+//==========Цвет состояния элементов===========
+$hover-link-color: #E6557B
+$bullet-active-color: #E6557B
+$hover-header-color: #FF5E88
+
+//==========Параметры шрифтов===========
+$fs-small: 14px
+$fs-medium: 16px
+$fs-medium-laptop: 14px
+$fs-small-laptop: 10px
+//$fs-large: 16px
+
+$lh-small: 16px
+$lh-medium: 19px
+$lh-medium-laptop: 16px
+$lh-small-laptop: 13px
+//$lh-large: 19px
+$text-spacing: 0.035em
+
+
+
+//============================
+//          Миксины
+//============================
+
+//==========Flex-направление===========
+@mixin flex-baseline-between
+  display: flex
+  align-items: baseline
+  justify-content: space-between
+
+@mixin flex-center-between
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+@mixin flex-center
+  display: flex
+  align-items: center
+
+@mixin flex-center-center
+  display: flex
+  align-items: center
+  justify-content: center
+
+
+@mixin flex-column
+  display: flex
+  flex-direction: column
+
+@mixin flex-between-stretch
+  display: flex
+  justify-content: space-between
+  align-items: stretch
+
+@mixin flex-center-evenly
+  display: flex
+  align-items: center
+  justify-content: space-evenly
+//==========Стили ссылок===========
+@mixin text-small
+  font-weight: 400
+  font-size: $fs-small
+  line-height: $lh-small
+  letter-spacing: $text-spacing
+  @media (max-width: 1400px)
+    font-size: $fs-small-laptop
+    line-height: $lh-small-laptop
+
+@mixin text-medium
+  font-weight: 500
+  font-size: $fs-medium
+  line-height: $lh-medium
+  letter-spacing: $text-spacing
+  @media (max-width: 1400px)
+    font-size: $fs-medium-laptop
+    line-height: $lh-medium-laptop
+
+@mixin text-large
+  font-weight: 500
+  font-size: $fs-large
+  line-height: $lh-large
+  letter-spacing: $text-spacing
+
+
+//============================
+//   Наследование параметров
+//============================
+%link-color
+  color: $text-lightly-color
+%link-color-header
+  color: white
+
+
+

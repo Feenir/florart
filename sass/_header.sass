@@ -1,0 +1,203 @@
+.header
+  margin-bottom: 30px
+  //верхний блок header
+  &__top
+    display: flex
+    align-items: center
+    background-color: $header-top-color
+    min-height: 40px
+    margin-bottom: 15px
+    @media (max-width: 1024px)
+      display: none
+  &__top-wrapper
+    width: 100%
+  &__nav-top
+    @include flex-baseline-between
+    &--mobile
+      flex-direction: column
+
+  &__nav-link
+    padding: 14px 10px
+    @media (max-width: 991px)
+      padding: 10px 8px
+
+  &__shop-button
+    display: inline-block
+    cursor: pointer
+    &--mobile
+      margin-top: 40px
+    @media (max-width: 1024px)
+      font-size: $fs-small
+    &:before
+      content: url("data:image/svg+xml,%3Csvg width='15' height='18' viewBox='0 0 15 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 7.54545C14 12.6364 7.5 17 7.5 17C7.5 17 1 12.6364 1 7.54545C1 5.80949 1.68482 4.14463 2.90381 2.91712C4.12279 1.68961 5.77609 1 7.5 1C9.22391 1 10.8772 1.68961 12.0962 2.91712C13.3152 4.14463 14 5.80949 14 7.54545Z' stroke='%2365B03F' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M7.5 10C8.88071 10 10 8.88071 10 7.5C10 6.11929 8.88071 5 7.5 5C6.11929 5 5 6.11929 5 7.5C5 8.88071 6.11929 10 7.5 10Z' fill='%2365B03F' stroke='%2365B03F' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
+      display: inline-block
+      margin-right: 15px
+      width: 13px
+      height: 16px
+      transform: translateY(3px)
+
+  &__decoration
+    color: $header-address-color
+
+  &__shop-hidden
+    display: none
+
+  &__location-show
+    margin-left: 10px
+  //средний блок header объеденяющий второй блок и третий
+  &__scroll
+    @include flex-column
+    gap: 15px
+  //средний блок header
+  &__average-wrapper
+    @include flex-center-between
+
+  &__call
+    @include flex-center
+
+  &__logo-wrapper
+    @include flex-center
+    &--mobile
+      @media (max-width: 1024px)
+        justify-content: space-between
+        margin-bottom: 15px
+
+
+
+  &__logo-dis
+    max-width: 30%
+    margin-left: 30px
+    @media (max-width: 1024px)
+      display: none
+
+  &__call
+    display: flex
+    align-items: flex-start
+    gap: 40px
+
+  &__callback-item
+    @include flex-column
+    align-items: flex-end
+
+  &__number
+    display: flex
+    align-items: center
+    gap: 10px
+    margin-bottom: 7px
+    @media (max-width: 560px)
+      margin-bottom: 0
+      gap: 5px
+
+  &__callback
+    opacity: .5
+    transition: opacity .5s
+    cursor: pointer
+    &:hover
+      opacity: 1
+
+  &__social
+    @media (max-width: 1024px)
+      display: none
+    &--mobile
+      display: flex
+      margin-top: 30px
+  //нижний блок header
+
+  &__down-menu
+    @include flex-between-stretch
+    background: $header-color
+    border-radius: 10px
+    max-height: 75px
+    overflow: hidden
+    @media (max-width: 1024px)
+      align-items: baseline
+  &__points-link
+    padding: 28px 25px
+    @media (max-width: 1024px)
+      width: 90%
+      padding: 14px 12px
+    @media (max-width: 560px)
+      padding: 10px 8px
+
+  &__bonus-item
+    margin-right: 65px
+    @media (max-width: 991px)
+      margin-right: 0
+
+  &__bonus-link
+    padding: 28px 10px
+    &--discount
+      &:after
+        content: 'скидка'
+        font-size: 12px
+        margin-left: 8px
+        display: none
+        @media (max-width: 1024px)
+          display: flex
+    &--indent
+      padding: 28px 25px
+      @media (max-width: 1024px)
+        display: none
+
+    &--mobile
+      @media (max-width: 1024px)
+        display: flex
+        transform: translateY(-15px)
+
+  &__points
+    &--hide
+      @media (max-width: 1024px)
+        display: none
+    &--show
+      display: none
+      @media (max-width: 1024px)
+        display: flex
+        flex-direction: column
+        background-color: #E6557B
+        border-radius: 16px
+        overflow: hidden
+        margin-bottom: 20px
+        position: relative
+        padding: 10px
+  //Мобильное меню стили
+
+  &__burger-box
+    display: flex
+  &__mobile-menu
+    position: fixed
+    top: 0
+    left: 0
+    z-index: -100
+    opacity: 0
+    pointer-events: none
+    visibility: hidden
+    width: 100%
+    height: 100%
+    background-color: white
+    padding: 0 15px
+    overflow-y: auto
+    &--open
+      z-index: 1000
+      opacity: 1
+      pointer-events: auto
+      visibility: visible
+
+  &__logo-item
+    &--mobile
+      display: flex
+      @media (max-width: 560px)
+        max-width: 170px
+
+  &__bonus-mobile
+    display: none
+    @media (max-width: 1024px)
+      display: block
+
+
+
+
+
+
+
+
+

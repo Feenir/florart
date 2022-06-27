@@ -1,0 +1,90 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  color: $text-color
+  overflow-x: hidden
+
+a
+  text-decoration: none
+
+li
+  list-style: none
+
+button
+  background-color: inherit
+  border: none
+  outline: none
+
+img
+  min-width: 100%
+  height: 100%
+  object-fit: cover
+
+br
+  @media (max-width: 768px)
+    display: none
+
+.container
+  max-width: 1280px
+  margin: 0 auto
+  @media (max-width: 1400px)
+    max-width: 970px
+  @media (max-width: 1024px)
+    padding: 0 15px
+
+.link-style-small
+  @include text-small
+  @extend %link-color
+  @media (max-width: 1400px)
+
+.link-style-medium
+  @include text-medium
+  color: $text-lightly-color
+  &--color
+    color: white
+
+.hero-element-text
+  font-weight: 500
+  font-size: 20px
+  line-height: 24px
+  letter-spacing: 0.035em
+  color: $text-lightly-color
+  @media (max-width: 1400px)
+    font-size: 16px
+    line-height: 18px
+
+.menu-burger
+  display: none
+  position: relative
+  width: 18px
+  height: 35px
+  margin-left: 20px
+  @media (max-width: 1024px)
+    display: block
+
+.menu-burger .menu-burger__body, .menu-burger:after, .menu-burger:before
+  height: 3px
+  width: 100%
+  position: absolute
+  background: white
+  margin: 0 auto
+
+.menu-burger .menu-burger__body
+  top: 21px
+
+.menu-burger:after, .menu-burger:before
+  content: ''
+
+.menu-burger:after
+  bottom: 5px
+
+.menu-burger:before
+  top: 15px
+
+.mobile
+  font-size: 16px
+
+

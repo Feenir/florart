@@ -1,0 +1,90 @@
+.hero
+  &__wrapper
+    position: relative
+  &__price
+    margin-bottom: 20px
+  &__slider
+    margin-bottom: 27px
+  &__pick
+    margin-bottom: 65px
+
+  &__slider-container
+    position: relative
+    @media (max-width: 560px)
+      padding-right: 0
+
+
+
+
+
+.pick
+  @include flex-center-between
+  @media (max-width: 991px)
+    flex-direction: column
+    align-items: flex-start
+    gap: 25px
+  &__link
+    @include flex-center-center
+    color: white
+    text-transform: uppercase
+    background-color: $button-back-color
+    border-radius: 42px
+    min-width: 370px
+    min-height: 60px
+
+.element
+  @include flex-center-evenly
+  gap: 10px
+  @media (max-width: 1024px)
+    justify-content: space-between
+  @media (max-width: 768px)
+    gap: 30px
+  &__block
+    @include flex-center-center
+    background-color: $hero-element-color
+    border-radius: 20px
+    box-shadow: 0px 5.33333px 9.33333px rgba(0, 0, 0, 0.1)
+    width: 100%
+    max-width: 330px
+    min-height: 125px
+    @media (max-width: 1400px)
+      max-width: 250px
+    @media (max-width: 991px)
+      max-width: 200px
+
+
+  &__text
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 10px 70px 10px 65px
+    @media (max-width: 1400px)
+        padding: 10px
+    @media (max-width: 680px)
+      flex-direction: column
+      text-align: center
+    &:before
+      content: ''
+      display: flex
+      width: 81px
+      height: 81px
+      margin-right: 20px
+      @media (max-width: 680px)
+        margin-right: 0
+        margin-bottom: 8px
+    &--price
+      &:before
+        content: url("../img/element/cheni.png")
+    &--delivery
+      &:before
+        content: url("../img/element/dostavka.png")
+    &--guarantees
+      &:before
+        content: url("../img/element/garantia.png")
+
+
+
+
+
+
+

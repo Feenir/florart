@@ -1,0 +1,51 @@
+.slider-hero
+  width: 100%
+  height: 100%
+  overflow: hidden
+
+  &__control-wrap
+    position: absolute
+    @include flex-center-center
+    top: calc(50% - 60px)
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    background-color: white
+    z-index: 10
+    @media (max-width: 1024px)
+      display: none
+    &--next
+      right: -35px
+    &--prev
+      left: -35px
+  &__arrow
+    cursor: pointer
+    transform: translateY(3px)
+
+    &--next
+      transform: rotateY(180deg) translateY(3px)
+
+  &__pagination
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-top: 32px
+
+  &__slide-wrapper
+    border-radius: 15px
+    overflow: hidden
+
+.swiper-pagination-bullet
+  width: 7px
+  height: 7px
+  background-color: $bullet-color
+  opacity: 1
+
+.swiper-pagination-bullet-active
+  background-color: $bullet-active-color
+  width: 10px
+  height: 10px
+
+.swiper-button-disabled .slider-hero__control-wrap .slider-hero__arrow
+  opacity: .5
+
