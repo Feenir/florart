@@ -7,6 +7,13 @@
     background-color: $header-top-color
     min-height: 40px
     margin-bottom: 15px
+    transition: all .5s
+    &--invisible
+      transition: all .5s
+      opacity: 0
+      z-index: -1000
+      visibility: hidden
+      pointer-events: none
     @media (max-width: 1024px)
       display: none
   &__top-wrapper
@@ -192,6 +199,25 @@
     display: none
     @media (max-width: 1024px)
       display: block
+
+  &__scroll
+    transition: all .52
+    &--scroll
+      position: fixed
+      display: flex
+      background-color: white
+      align-items: center
+      justify-content: center
+      flex-direction: column
+      z-index: 10000
+      width: 100%
+      top: 0
+      padding-top: 10px
+      & .header__average
+        width: 100%
+      & .header__bottom
+        background-color: #E6557B
+        width: 100%
 
 
 

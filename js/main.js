@@ -1,4 +1,9 @@
 jQuery(document).ready(function ($) {
+	
+	// =======================
+	// Слайдер блок hero
+	// =======================
+	
 	var swiper = new Swiper(".JsSlider-hero", {
 		slidesPerView: 3,
 		spaceBetween: 20,
@@ -26,7 +31,34 @@ jQuery(document).ready(function ($) {
 		},
 	});
 	
+	// =======================
+	// Хэдер липкий
+	// =======================
 	
+	const headerHeight = $('.header__scroll').outerHeight(true)
+	$(window).scroll(function(){
+		if($(this).scrollTop()>0){
+			$('.header__scroll').addClass('header__scroll--scroll');
+			$('.header__top').addClass('header__top--invisible')
+			$('body').css({
+				'paddingTop': headerHeight // делаем отступ у body, равный высоте шапки
+			});
+			
+		
+			
+		}
+		else if ($(this).scrollTop()<headerHeight){
+			$('.header__scroll').removeClass('header__scroll--scroll');
+			$('body').css( {
+				paddingTop: 0
+			})
+			$('.header__top').removeClass('header__top--invisible')
+		}
+		
+	});
+	// =======================
+	// Бургер открытие
+	// =======================
 	$('.js-open-burger').on('click', function (event) {
 		event.preventDefault();
 		$('.header__mobile-menu').addClass('header__mobile-menu--open')
